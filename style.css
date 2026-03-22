@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(to bottom, #000, #111);
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.logo {
+  width: 180px;
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+.tagline {
+  opacity: 0.7;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  animation: fadeUp 1s ease;
+}
+
+h2 {
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+}
+
+/* GALERIA */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+.modal-conteudo {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0;
+  opacity: 0.6;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+}

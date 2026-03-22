@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Friendship 66</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+  <img src="img/logo.png" alt="" class="logo">
+  <h1>FRIENDSHIP 66</h1>
+  <p class="tagline">Rock Underground Brasileiro</p>
+
+  <div class="links">
+    <a href="https://www.instagram.com/friendship66oficial" target="_blank">Instagram</a>
+    <a href="https://open.spotify.com/intl-pt/artist/0vhXBSfPctmz3f0Tllvlvu" target="_blank">Spotify</a>
+    <a href="https://youtube.com/channel/UCVoxzaKzygPaWs5TAQKb2mQ" target="_blank">YouTube</a>
+  </div>
+</header>
+
+<section class="sobre">
+  <h2>Sobre a Banda</h2>
+
+  <p>
+    Desde 2010, a Friendship 66 vem moldando sua trajetória no cenário do rock independente, e ao completar uma década de existência, a banda tem muito a celebrar e compartilhar com seus fãs. O grupo foi oficialmente formado nesse ano, mas a semente foi plantada em 2009, nos porões da casa do fundador, onde surgiam as primeiras composições que dariam vida a essa incrível jornada musical.
+  </p>
+
+  <p>
+    Inspirada pela cena underground pulsante dos anos 2000 no Brasil e influenciada por ícones como Ramones, Sex Pistols e 2 Minutos da Argentina, a Friendship 66 construiu sua identidade única. Suas letras, que transitam entre o cotidiano urbano e temas políticos, estabeleceram a banda como uma voz autêntica no universo do rock nacional independente.
+  </p>
+
+  <p>
+    O palco foi conquistado em 2013, quando a banda recebeu um convite de um coletivo local e fez sua estreia no Parque Gabriel Chucre em Carapicuíba. Esse evento marcou o início de uma série de apresentações regionais que consolidaram a presença da Friendship 66 no circuito underground de São Paulo. Em 2016, a banda teve a oportunidade de se apresentar no maior festival de rock de Osasco, proporcionando uma experiência única em uma grande estrutura, algo distante dos eventos underground que marcaram seus primeiros anos.
+  </p>
+
+  <p>
+    A virada de chave aconteceu com o lançamento do EP “Mentiras na TV” em 2016. Com abordagem crítica e questionadora, as faixas refletiam as preocupações sociais e políticas da banda. O EP foi gravado de forma independente, financiado pelas vendas de merchandise da banda, mostrando a autossuficiência e a determinação do grupo. O videoclipe homônimo, “Mentiras na TV”, também lançado no mesmo ano, foi uma produção do tipo “faça você mesmo”, com cenas gravadas em Carapicuíba.
+  </p>
+
+  <p>
+    Dois anos após esses marcos, Friendship 66 uniu forças com Sukinho di 10 para um projeto ousado: o CD Split “O Chão é o Limite”. Produzido de forma independente por Lau Andrade da Conspiração Records e prensado por João Bazilio Ribeiro da Ibotirama Records, o álbum contou com seis faixas inéditas, sendo três de cada banda. Uma colaboração que prometia revolucionar e influenciar outras bandas do cenário underground.
+  </p>
+
+  <p>
+    A pandemia de 2020 trouxe desafios, mas também inspirou a Friendship 66 a criar a faixa “Ruas Vazias”. Um videoclipe impactante que expressava o momento de negacionismo e omissão durante a crise do COVID-19, dedicado aos corajosos profissionais de saúde na linha de frente.
+  </p>
+
+  <p>
+    Ao atingir a marca de 10 anos em 2022, a banda decidiu eternizar sua jornada através do documentário “A História até aqui”, dirigido pela Subterrânea Filmes e roteirizado pelos próprios integrantes. O documentário aborda os momentos cruciais que deram forma ao legado da Friendship 66. Infelizmente, também registra a perda repentina e devastadora do vocalista Vilson. Contudo, a banda permanece firme, pronta para seguir adiante e entrar em estúdio em breve para a gravação de um novo EP, mantendo viva a chama do rock independente. A Friendship 66 é mais do que uma banda; é uma história de perseverança, autenticidade e paixão pelo som que faz pulsar o coração do rock underground brasileiro.
+  </p>
+</section>
+
+<section class="spotify">
+  <h2>Ouça agora</h2>
+
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/artist/0vhXBSfPctmz3f0Tllvlvu"
+    width="100%" height="352"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</section>
+
+<section class="galeria">
+  <h2>Galeria</h2>
+
+  <div class="grid-galeria">
+    <img src="img/foto1.jpg" alt="" onclick="abrirImagem(this)">
+    <img src="img/foto2.jpg" alt="" onclick="abrirImagem(this)">
+    <img src="img/foto3.jpg" alt="" onclick="abrirImagem(this)">
+    <img src="img/foto4.jpg" alt="" onclick="abrirImagem(this)">
+  </div>
+</section>
+
+<div id="modal" class="modal" onclick="fecharImagem()">
+  <span class="fechar">×</span>
+  <img class="modal-conteudo" id="imgModal">
+</div>
+
+<section class="integrantes">
+  <h2>Formação Atual</h2>
+  <ul>
+    <li>Rodrigo – Guitarra e voz</li>
+    <li>Saan – Bateria</li>
+    <li>Allan – Baixo e backing vocal</li>
+  </ul>
+
+  <h2>Ex-integrantes</h2>
+  <ul>
+    <li>Vilson – Vocal</li>
+    <li>Marcos Punk – Baixista</li>
+    <li>Marcos Answer – Baixista</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Friendship 66</p>
+</footer>
+
+<script>
+function abrirImagem(img) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("imgModal").src = img.src;
+}
+
+function fecharImagem() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
